@@ -16,7 +16,6 @@ function deleteFromObjectByKey(object, key){
   //deletes key from a clone of object and returns the new object
   //non-destructively--- doesn't modify original
   var newObject = Object.assign({}, object)
-  return newObject
   delete newObject.key
-
+  return newObject
 }
